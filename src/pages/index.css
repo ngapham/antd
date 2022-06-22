@@ -1,0 +1,34 @@
+
+.ant-menu.ant-menu-dark .ant-menu-sub {
+    color: #0094ff;
+    background: #13161b!important;
+  }
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    color: rgba(255, 255, 255, 0.65);
+    background:#13161b!important;
+  }
+  .ant-menu-title-content:hover {
+    color: aqua;
+}
+  .ant-layout-header {
+   
+    background: #13161b!important;
+  }
+  .ant-layout-sider {
+
+    background: #13161b!important;
+   
+  }
+  
+  .ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark{
+    
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .ant-menu-item.ant-menu-item-selected{
+   background-color: #8e97a8!important;
+    --hovering-activated-color: #0094ff;
+  }
