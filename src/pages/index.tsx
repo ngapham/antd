@@ -62,16 +62,7 @@ const TestnApp = () => {
         width="17%"
       >
         <SiderApp />
-        <div className={styles.collapse_btn}>
-          {React.createElement(
-            collapsed ? RightCircleOutlined: LeftCircleOutlined,
-            {
-              className: 'trigger',
-             
-              onClick: () => setCollapsed(!collapsed),
-            },
-          )}
-        </div>
+       
       </Sider>
       <Layout className={styles.Content_Container} style={{ width: '83%' }}>
         <Header
@@ -86,13 +77,13 @@ const TestnApp = () => {
             <HeartIcon style={{ color: 'white', marginRight: '1%' }} />
             Marketplace
           </h1>
-          {/* {React.createElement(
+          {React.createElement(
             collapsed ? RightCircleOutlined : LeftCircleOutlined,
             {
               className: 'trigger',
               onClick: () => setCollapsed(!collapsed),
             },
-          )} */}
+          )}
         </Header>
         <Content className={styles.main_containerd}>
           <AppHome />

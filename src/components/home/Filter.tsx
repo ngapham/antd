@@ -13,6 +13,7 @@ import {
   Input,
   Select,
   Checkbox,
+  Card,
 } from 'antd';
 import { CaretRightOutlined, SearchOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
@@ -88,8 +89,8 @@ const imgArr: any[] = [
     img: bird,
   },
   {
-    text: "reptile",
-    img: reptile
+    text: 'reptile',
+    img: reptile,
   },
   {
     text: 'mech',
@@ -106,7 +107,6 @@ const imgArr: any[] = [
 ];
 
 const FilterApp: React.FC = () => {
-  
   const [reverse, setReverse] = useState(true);
 
   const onChange = (key: string | string[]) => {
@@ -123,7 +123,7 @@ const FilterApp: React.FC = () => {
 
   function ListBtn() {
     const listItem = imgArr?.map((e, i) => (
-      <Button type="primary" icon={<img src={e.img} />} ghost >
+      <Button type="primary" icon={<img src={e.img} />} ghost>
         {e.text}
       </Button>
     ));
@@ -139,6 +139,9 @@ const FilterApp: React.FC = () => {
       )}
       className="site-collapse-custom-collapse"
     >
+      <Card title="Card" size="small">
+        Filter
+      </Card>
       <Panel header="Game" key="1">
         <Radio.Group
           className={styles.radio_group}

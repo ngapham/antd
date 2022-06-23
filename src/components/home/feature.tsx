@@ -187,6 +187,7 @@ function FeatureApp() {
                 defaultActiveKey="1"
                 tabBarExtraContent={slot}
                 tabBarGutter={0}
+                // tabPosition='right'
               >
                 <TabPane
                   tab={
