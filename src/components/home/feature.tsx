@@ -178,9 +178,8 @@ function FeatureApp() {
       <Row>
         <Col span={20} push={4}>
           <div className={styles.product_item}>
-            <div className= {styles.product_item_title}>
-              <h2 className={styles.title_app_feature} >685,236 Axies</h2>
-
+            <div className={styles.product_item_title}>
+              <h2 className={styles.title_app_feature}>685,236 Axies</h2>
             </div>
             <div className={styles.product_item_content}>
               <Tabs
@@ -218,7 +217,7 @@ function FeatureApp() {
           </div>
         </Col>
         <Col span={4} pull={20}>
-          <div className= {styles.menu_left}>
+          <div className={styles.menu_left}>
             <FilterApp />
           </div>
         </Col>

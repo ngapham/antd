@@ -4,12 +4,17 @@
 }
 
 .category_products [role='tablist'] {
-  display: flex !important;
-  justify-content: end !important;
+  display: flex;
+  justify-content: end;
+  margin-right: 25px;
 }
 
 .category_products [role='tablist'] div:nth-child(2) {
-  flex: none !important;
+  flex: none;
+}
+
+.category_products [role='tablist']::before {
+  content: none;
 }
 
 .tab_title {
