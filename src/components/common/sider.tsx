@@ -1,7 +1,7 @@
 import React from 'react';
 // import './App.css';
 import 'antd/dist/antd.css';
-import styles from './index.less';
+import styles from '../../pages/index.less';
 import {
   WalletOutlined,
   HomeOutlined,

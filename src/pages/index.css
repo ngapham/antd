@@ -32,3 +32,23 @@
    background-color: #8e97a8!important;
     --hovering-activated-color: #0094ff;
   }
+  .ant-tabs-ink-bar {
+    border-bottom: 2px solid #0094ff;
+}
+.ant-radio-checked .ant-radio-inner{
+  border: 8px solid #046cfc !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after{
+  background-color: #ffffff;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #13161B ;
+}
+.ant-radio-inner{
+  background: #13161B!important;
+}
+/* .tab_filter>.ant-tabs-extra-content,.tab_filter>.ant-tabs-tab.ant-tabs-tab-active{
+  border-bottom: unset!important;
+} */

@@ -18,8 +18,7 @@ import {
 import { CaretRightOutlined, SearchOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
 import type { CheckboxValueType } from 'antd/es/checkbox/Group';
-import styles from '../../pages/index.less';
-import PurityGameApp from '../Filter/Purity/PurityGame';
+import styles from './index.less';
 // icon main filter
 import aquatic from '../../assets/images/icon/aquatic.png';
 import beast from '../../assets/images/icon/beast.png';
@@ -40,15 +39,15 @@ import dusk_crest from '../../assets/images/icon/dusk-crest.png';
 import mech_crest from '../../assets/images/icon/mech-crest.png';
 import plant_crest from '../../assets/images/icon/plant-crest.png';
 import reptile_crest from '../../assets/images/icon/reptile-crest.png';
-
+import PurityGameApp from './Purity/PurityGame';
 
 const { Option } = Select;
 const { Panel } = Collapse;
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+    A dog is a type of domesticated animal.
+    Known for its loyalty and faithfulness,
+    it can be found as a welcome guest in many households across the world.
+  `;
 const plainOptions = ['Egg', 'Adult'];
 const options = [
   { label: 'Meo', value: 'Meo' },
@@ -61,7 +60,15 @@ const options1 = [
 ];
 
 const imgArr: any[] = [
-
+  // beast,
+  // aquatic,
+  // plant,
+  // bug,
+  // bird,
+  // reptile,
+  // mech,
+  // dawn,
+  // dusk,
   {
     text: 'beast',
     img: beast,
@@ -100,7 +107,7 @@ const imgArr: any[] = [
   },
 ];
 
-const FilterApp: React.FC = () => {
+const FilterHomeApp: React.FC = () => {
   const [reverse, setReverse] = useState(true);
 
   const onChange = (key: string | string[]) => {
@@ -117,12 +124,11 @@ const FilterApp: React.FC = () => {
 
   function ListBtn() {
     const listItem = imgArr?.map((e, i) => (
-      <div className=''>
-         <Button type="primary" icon={<img src={e.img} />} ghost>
-        {e.text}
-      </Button>
+      <div className="">
+        <Button type="primary" icon={<img src={e.img} />} ghost>
+          {e.text}
+        </Button>
       </div>
-     
     ));
     return <ul>{listItem}</ul>;
   }
@@ -136,9 +142,9 @@ const FilterApp: React.FC = () => {
       )}
       className={styles.site_collapse_filter}
     >
-      <div  className={styles.title_card_filter}>
-       <p className={styles.title_card}>Filtet</p>
-       <p className={styles.btn_card}>Reset</p>
+      <div className={styles.title_card_filter}>
+        <p className={styles.title_card}>Filtet</p>
+        <p className={styles.btn_card}>Reset</p>
       </div>
       <Panel header="Game" key="1" className={styles.title_panel}>
         <Radio.Group
@@ -162,10 +168,10 @@ const FilterApp: React.FC = () => {
           prefix={<SearchOutlined />}
         />
       </Panel>
-      <Panel header="Purity & Genes" key="4"className={styles.title_panel}>
+      <Panel header="Purity & Genes" key="4" className={styles.title_panel}>
         <PurityGameApp/>
       </Panel>
-      <Panel header="Breed count" key="5"className={styles.title_panel}>
+      <Panel header="Breed count" key="5" className={styles.title_panel}>
         <Slider
           range
           defaultValue={[1, 7]}
@@ -296,4 +302,4 @@ const FilterApp: React.FC = () => {
     </Collapse>
   );
 };
-export default FilterApp;
+export default FilterHomeApp;

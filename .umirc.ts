@@ -8,10 +8,13 @@ export default defineConfig({
     { path: '/', component: '@/pages/index' },
     { path: '/home', component: '@/pages/marketplace' },
     { path: '/test', component: '@/components/HeaderSearch/index' },
-    { path: '/test1', component: '@/components/home/test1' },
-    { path: '/test2', component: '@/components/home/test' },
-    { path: '/test3', component: '@/components/home/sidertest' },
+    { path: '/test1', component: '@/components/Filter/Purity/PurityGame' },
+    { path: '/tt', component: '@/components/TestCode/testcode' },
+    // { path: '/test3', component: '@/components/home/sidertest' },
+    { path: '/testLand', component: '@/components/home/land' },
+    
     { path: '/testcardlist', component: '@/components/CardList/AxieCardList' },
+    { path: '/item', component: '@/pages/item' },
   ],
   fastRefresh: {},
   locale: {

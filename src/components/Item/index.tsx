@@ -1,29 +1,28 @@
 import React from 'react';
-import AppFeature from '../components/home/feature';
-import AppFaq from '../components/home/faq';
-import AppContact from '../components/home/contact';
+// import AppFeature from '../components/home/feature';
+
 import { Tabs } from 'antd';
 import styles from './index.less';
 import Icon, { HomeOutlined } from '@ant-design/icons';
 // icontab
 
-import tab_axie from '../../src/assets/images/tab-axie.png';
-import tab_bundle from '../../src/assets/images/tab-bundle.png';
-import tab_item from '../../src/assets/images/tab-item.png';
-import tab_land from '../../src/assets/images/tab-land.png';
+import tab_axie from '../../assets/images/tab-axie.png';
+import tab_bundle from '../../assets/images/tab-bundle.png';
+import tab_item from '../../assets/images/tab-item.png';
+import tab_land from '../../assets/images/tab-land.png';
 const { TabPane } = Tabs;
 
 const onChange = (key?: any) => {
   console.log(key);
 };
 
-const AppHome = () => (
+const AppItem = () => (
   <div className={styles.tab_filter}>
   
     <Tabs
       defaultActiveKey="1"
       onChange={onChange}
-      className={styles.filter_tab}
+      className={styles.tab_filter}
     >
       <TabPane
         tab={
@@ -40,7 +39,7 @@ const AppHome = () => (
         key="1"
       >
         <div className={styles.category_products}>
-          <AppFeature />
+          
         </div>
       </TabPane>
       <TabPane
@@ -58,7 +57,7 @@ const AppHome = () => (
         closeIcon
       >
         <div className={styles.category_products}>
-          <AppFeature />
+          
         </div>
       </TabPane>
       <TabPane
@@ -76,7 +75,7 @@ const AppHome = () => (
         key="3"
       >
         <div className={styles.category_products}>
-          <AppFeature />
+          
         </div>
       </TabPane>
       <TabPane
@@ -93,11 +92,11 @@ const AppHome = () => (
         key="4"
       >
         <div className={styles.category_products}>
-          <AppFeature />
+      
         </div>
       </TabPane>
     </Tabs>
   </div>
 );
 
-export default AppHome;
+export default AppItem;

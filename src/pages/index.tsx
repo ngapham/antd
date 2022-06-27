@@ -42,13 +42,15 @@ const TestnApp = () => {
     switch (key) {
       case '1':
         console.log('Chuyen sang home');
-        history.push('/home');
+        history.push('/');
         break;
       case '2':
         console.log('Chuyen sang marketplace');
+        history.push('/home');
         break;
       case '3':
         console.log('Chuyen sang lunacian express');
+        history.push('/home');
         break;
     }
   }
